@@ -1,70 +1,87 @@
 <!DOCTYPE html>
 <html lang="zh-TW">
+
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Jack & Kensey's Wedding</title>
-    
+
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
-    
+
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet">
-    
+    <link
+        href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Noto+Sans+TC:wght@300;400;500;700&display=swap"
+        rel="stylesheet">
+
     <!-- Lucide Icons -->
     <script src="https://unpkg.com/lucide@latest"></script>
 
     <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            fontFamily: {
-              script: ['"Great Vibes"', 'cursive'],
-              sans: ['"Noto Sans TC"', 'Helvetica', 'Arial', 'sans-serif'],
-            },
-            colors: {
-              'wedding-rose': '#e6b8b8',
-              'wedding-gold': '#d4af37',
-              'wedding-cream': '#fcfbf9',
-              'wedding-dark': '#2c2c2c',
-            },
-            animation: {
-              'fade-in': 'fadeIn 0.5s ease-out forwards',
-              'fade-in-up': 'fadeInUp 0.8s ease-out forwards',
-            },
-            keyframes: {
-              fadeIn: {
-                '0%': { opacity: '0' },
-                '100%': { opacity: '1' },
-              },
-              fadeInUp: {
-                '0%': { opacity: '0', transform: 'translateY(20px)' },
-                '100%': { opacity: '1', transform: 'translateY(0)' },
-              }
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        script: ['"Great Vibes"', 'cursive'],
+                        sans: ['"Noto Sans TC"', 'Helvetica', 'Arial', 'sans-serif'],
+                    },
+                    colors: {
+                        'wedding-rose': '#e6b8b8',
+                        'wedding-gold': '#d4af37',
+                        'wedding-cream': '#fcfbf9',
+                        'wedding-dark': '#2c2c2c',
+                        'wedding-blue': '#36457D',
+                    },
+                    animation: {
+                        'fade-in': 'fadeIn 0.5s ease-out forwards',
+                        'fade-in-up': 'fadeInUp 0.8s ease-out forwards',
+                    },
+                    keyframes: {
+                        fadeIn: {
+                            '0%': { opacity: '0' },
+                            '100%': { opacity: '1' },
+                        },
+                        fadeInUp: {
+                            '0%': { opacity: '0', transform: 'translateY(20px)' },
+                            '100%': { opacity: '1', transform: 'translateY(0)' },
+                        }
+                    }
+                }
             }
-          }
         }
-      }
     </script>
     <style>
-      html { scroll-behavior: smooth; }
-      ::-webkit-scrollbar { width: 8px; }
-      ::-webkit-scrollbar-track { background: #fcfbf9; }
-      ::-webkit-scrollbar-thumb { background: #e6b8b8; border-radius: 4px; }
-      
-      /* Utility for parallax background */
-      .parallax-bg {
-        background-image: url('https://picsum.photos/1920/1080?grayscale&blur=2');
-      }
+        html {
+            scroll-behavior: smooth;
+        }
+
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #fcfbf9;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #e6b8b8;
+            border-radius: 4px;
+        }
+
+        /* Utility for parallax background */
+        .parallax-bg {
+            background-image: url('images/header-bg.jpg');
+        }
     </style>
 </head>
+
 <body class="bg-wedding-cream text-wedding-dark antialiased font-sans">
 
     <!-- HEADER -->
-    <header class="relative w-full h-[85vh] overflow-hidden flex items-center justify-center text-white">
-        <div class="absolute inset-0 bg-cover bg-center z-0 transform scale-105 parallax-bg">
+    <header class="relative w-full h-[55vh] overflow-hidden flex items-center justify-center text-white">
+        <div class="absolute inset-0 bg-cover bg-center bg-no-repeat z-0 transform scale-105 parallax-bg">
             <div class="absolute inset-0 bg-black/40"></div>
         </div>
         <div class="relative z-10 text-center px-4 animate-fade-in-up">
@@ -74,7 +91,8 @@
             <h1 class="text-7xl md:text-9xl font-script mb-6 drop-shadow-lg text-white">
                 Jack & Kensey's Wedding
             </h1>
-            <p class="text-lg md:text-xl font-sans font-light tracking-[0.2em] uppercase mt-6 border-t border-b border-white/30 py-4 inline-block text-stone-200">
+            <p
+                class="text-lg md:text-xl font-sans font-light tracking-[0.2em] uppercase mt-6 border-t border-b border-white/30 py-4 inline-block text-stone-200">
                 2026 Feb 07<span class="mx-4 text-wedding-rose">•</span>Taipei
             </p>
         </div>
@@ -82,73 +100,156 @@
 
     <main>
         <!-- WEDDING INFO -->
-        <section class="py-20 px-4 bg-wedding-cream">
+        <!-- WEDDING INFO -->
+        <!-- Part 1: Intro -->
+        <section class="pt-20 pb-12 px-4 bg-wedding-cream">
             <div class="max-w-6xl mx-auto">
-                <div class="text-center mb-16">
-                    <h2 class="text-3xl md:text-4xl font-bold text-stone-800 mb-2 tracking-wide">誠摯邀請</h2>
-                    <p class="text-stone-400 text-lg mb-4 tracking-wider">You Are Invited</p>
-                    <p class="text-stone-500 max-w-lg mx-auto">
-                        在這個特別的日子裡，我們希望能與您分享這份喜悅。<br/>
-                        Please join us to celebrate our special day.
+                <div class="text-center">
+                    <h2 class="text-3xl md:text-4xl font-bold text-stone-800 mb-2 tracking-wide">誠摯地邀請您參與我們的婚禮</h2>
+                    <p class="text-stone-400 text-lg mb-4 tracking-wider">Please join us to celebrate our special day
                     </p>
-                </div>
 
-                <!-- Ceremony Section (Hidden by default, shown via JS if URL has ?inv=ceremony) -->
-                <div id="ceremony-section" class="hidden mb-16 animate-fade-in">
-                    <div class="max-w-3xl mx-auto bg-white border-2 border-wedding-gold/30 rounded-xl p-8 md:p-10 relative overflow-hidden shadow-lg text-center">
-                        <div class="absolute top-0 left-0 w-20 h-20 border-t-4 border-l-4 border-wedding-gold/40 rounded-tl-xl"></div>
-                        <div class="absolute bottom-0 right-0 w-20 h-20 border-b-4 border-r-4 border-wedding-gold/40 rounded-br-xl"></div>
-        
-                        <div class="text-wedding-gold mb-4 flex justify-center"><i data-lucide="gem" class="w-8 h-8"></i></div>
-                        <h3 class="text-2xl font-bold text-stone-800 mb-2 tracking-widest">證婚儀式</h3>
-                        <p class="text-wedding-gold font-script text-2xl mb-6">Wedding Ceremony</p>
-                        
-                        <div class="flex flex-col md:flex-row justify-center items-center gap-6 md:gap-12 text-stone-600">
-                            <div class="flex items-center gap-2">
-                                <i data-lucide="clock" class="w-5 h-5 text-wedding-gold"></i>
-                                <span class="font-medium text-lg">10:00 儀式開始 / Ceremony Begins</span>
+                    <!-- Couple Names -->
+                    <!-- Couple Names -->
+                    <div
+                        class="mt-10 grid grid-cols-[1fr_auto_1fr] items-start gap-3 md:gap-16 max-w-2xl mx-auto pr-6 md:pr-12">
+                        <!-- Groom -->
+                        <div class="flex flex-col items-center gap-1 md:gap-3 text-stone-600 justify-self-end">
+                            <span class="font-script text-5xl md:text-5xl text-wedding-blue">Jack</span>
+                            <span class="text-base md:text-xl tracking-widest">蔡秉佑</span>
+                        </div>
+
+                        <!-- And -->
+                        <div class="font-script text-3xl md:text-3xl text-stone-400 px-1 md:px-2 mt-2 md:mt-3">and</div>
+
+                        <!-- Bride -->
+                        <div class="flex flex-col items-center gap-1 md:gap-3 text-stone-600 justify-self-start">
+                            <span class="font-script text-5xl md:text-5xl text-wedding-blue">Kensey</span>
+                            <span class="text-base md:text-xl tracking-widest">李佳穎</span>
+                        </div>
+                    </div>
+
+                    <!-- Parents Names -->
+                    <div class="mt-16">
+                        <h3 class="text-stone-400 text-sm tracking-[0.2em] mb-6 uppercase pl-[0.2em]">家長</h3>
+                        <div
+                            class="flex flex-row flex-wrap justify-center items-center gap-16 md:gap-36 text-base md:text-lg text-stone-600 tracking-wider">
+                            <div class="flex gap-3 md:gap-4">
+                                <span>蔡寬福</span>
+                                <span>張瑢糴</span>
                             </div>
-                            <div class="hidden md:block w-px h-8 bg-stone-200"></div>
-                            <div class="flex items-center gap-2">
-                                <i data-lucide="map-pin" class="w-5 h-5 text-wedding-gold"></i>
-                                <span class="font-medium text-lg">漢來戶外證婚庭園 (6F)</span>
+                            <div class="flex gap-3 md:gap-4">
+                                <span>李武男</span>
+                                <span>徐瑜樺</span>
                             </div>
                         </div>
                     </div>
                 </div>
-                
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 items-stretch">
-                    <!-- Date -->
-                    <div class="flex flex-col items-center p-8 bg-white rounded-xl shadow-sm border border-stone-100 hover:shadow-md transition-shadow duration-300 h-full">
-                        <div class="text-wedding-rose mb-4 p-3 bg-rose-50 rounded-full"><i data-lucide="calendar" class="w-7 h-7"></i></div>
-                        <h3 class="text-lg font-bold text-stone-800 mb-4 uppercase tracking-widest">日期 / Date</h3>
-                        <div class="text-stone-600 font-medium text-lg text-center whitespace-pre-line leading-relaxed">2026 Feb 07 Sat.</div>
+            </div>
+        </section>
+
+        <!-- Part 2: Ceremony Section (Hidden by default, shown via JS if URL has ?inv=ceremony) -->
+        <div id="ceremony-section"
+            class="hidden max-w-4xl mx-auto w-[calc(100%-2rem)] bg-white p-8 md:p-12 animate-fade-in border border-stone-100 relative overflow-hidden rounded-xl shadow-sm">
+            <!-- Decorative background elements -->
+            <div
+                class="absolute top-0 left-0 w-32 h-32 border-t-4 border-l-4 border-wedding-gold/20 rounded-br-3xl -translate-x-4 -translate-y-4">
+            </div>
+            <div
+                class="absolute bottom-0 right-0 w-32 h-32 border-b-4 border-r-4 border-wedding-gold/20 rounded-tl-3xl translate-x-4 translate-y-4">
+            </div>
+
+            <div class="max-w-4xl mx-auto text-center relative z-10">
+                <div class="text-wedding-gold mb-6 flex justify-center"><i data-lucide="gem" class="w-10 h-10"></i>
+                </div>
+                <h3 class="text-3xl font-bold text-stone-800 mb-2 tracking-widest">證婚儀式</h3>
+                <p class="text-wedding-gold font-script text-3xl mb-10">Wedding Ceremony</p>
+
+                <div class="flex flex-col justify-center items-start gap-8 text-stone-600 w-full max-w-lg mx-auto">
+                    <div class="flex items-center gap-3">
+                        <div class="text-wedding-gold p-3 bg-wedding-gold/10 rounded-full">
+                            <i data-lucide="calendar" class="w-6 h-6"></i>
+                        </div>
+                        <span class="font-medium text-xl text-left">2026.02.07 (Sat.)</span>
                     </div>
-                    <!-- Time -->
-                    <div class="flex flex-col items-center p-8 bg-white rounded-xl shadow-sm border border-stone-100 hover:shadow-md transition-shadow duration-300 h-full">
-                        <div class="text-wedding-rose mb-4 p-3 bg-rose-50 rounded-full"><i data-lucide="clock" class="w-7 h-7"></i></div>
-                        <h3 class="text-lg font-bold text-stone-800 mb-4 uppercase tracking-widest">時間 / Time</h3>
-                        <div class="text-stone-600 font-medium text-lg text-center whitespace-pre-line leading-relaxed">11:30 迎賓酒會 / Doors Open<br>12:00 午宴開始 / Reception</div>
+                    <div class="flex items-center gap-3">
+                        <div class="text-wedding-gold p-3 bg-wedding-gold/10 rounded-full">
+                            <i data-lucide="clock" class="w-6 h-6"></i>
+                        </div>
+                        <span class="font-medium text-xl text-left">10:00 儀式開始 / Ceremony Begins</span>
                     </div>
-                    <!-- Location -->
-                    <div class="flex flex-col items-center p-8 bg-white rounded-xl shadow-sm border border-stone-100 hover:shadow-md transition-shadow duration-300 h-full">
-                        <div class="text-wedding-rose mb-4 p-3 bg-rose-50 rounded-full"><i data-lucide="map-pin" class="w-7 h-7"></i></div>
-                        <h3 class="text-lg font-bold text-stone-800 mb-4 uppercase tracking-widest">地點 / Location</h3>
-                        <div class="text-stone-600 font-medium text-lg text-center whitespace-pre-line leading-relaxed">台北漢來大飯店 3F 鉑金A廳<br>Grand Hilai Taipei 3F<br>Platinum Ballroom A</div>
-                        <div class="text-stone-400 text-sm mt-4 text-center whitespace-pre-line border-t border-stone-100 pt-4 w-full">台北市南港區經貿一路168號<br>No. 168, Jingmao 1st Rd, Nangang Dist, Taipei</div>
+                    <div class="flex items-center gap-3">
+                        <div class="text-wedding-gold p-3 bg-wedding-gold/10 rounded-full">
+                            <i data-lucide="map-pin" class="w-6 h-6"></i>
+                        </div>
+                        <div class="text-left">
+                            <span class="font-medium text-xl text-left">台北漢來大飯店 5F 天空森林戶外禮堂<br>Grand Hilai Taipei
+                                Skyline Chapel</span>
+                            <div class="text-stone-400 text-sm mt-1 text-left">台北市南港區經貿一路168號<br>No. 168, Jingmao 1st
+                                Rd, Nangang Dist, Taipei</div>
+                        </div>
                     </div>
                 </div>
-                
+            </div>
+        </div>
+
+        <!-- Part 3: Details -->
+        <section class="pt-10 pb-10 px-4 bg-wedding-cream">
+            <div class="max-w-6xl mx-auto">
+                <div
+                    class="max-w-4xl mx-auto bg-white rounded-xl shadow-sm border border-stone-100 p-8 md:p-12 text-center">
+                    <div class="text-wedding-rose mb-6 flex justify-center"><i data-lucide="heart"
+                            class="w-10 h-10"></i></div>
+                    <h3 class="text-3xl font-bold text-stone-800 mb-2 tracking-widest">午宴資訊</h3>
+                    <p class="text-wedding-rose font-script text-3xl mb-10">Reception Info</p>
+
+                    <div class="flex flex-col justify-center items-start gap-8 text-stone-600 w-full max-w-lg mx-auto">
+                        <!-- Date -->
+                        <div class="flex items-center gap-3">
+                            <div class="text-wedding-rose p-3 bg-rose-50 rounded-full">
+                                <i data-lucide="calendar" class="w-6 h-6"></i>
+                            </div>
+                            <span class="font-medium text-xl text-left">2026.02.07 (Sat.)</span>
+                        </div>
+
+                        <!-- Time -->
+                        <div class="flex items-center gap-3">
+                            <div class="text-wedding-rose p-3 bg-rose-50 rounded-full">
+                                <i data-lucide="clock" class="w-6 h-6"></i>
+                            </div>
+                            <span class="font-medium text-xl text-left">11:30 迎賓酒會 / Doors Open<br>12:00 午宴開始 /
+                                Reception</span>
+                        </div>
+
+                        <!-- Location -->
+                        <div class="flex items-center gap-3">
+                            <div class="text-wedding-rose p-3 bg-rose-50 rounded-full">
+                                <i data-lucide="map-pin" class="w-6 h-6"></i>
+                            </div>
+                            <div class="text-left">
+                                <span class="font-medium text-xl text-left">台北漢來大飯店 3F 鉑金 A 廳<br>Grand Hilai Taipei 3F
+                                    Platinum
+                                    Ballroom A</span>
+                                <div class="text-stone-400 text-sm mt-1 text-left">台北市南港區經貿一路168號<br>No. 168, Jingmao
+                                    1st Rd,
+                                    Nangang Dist, Taipei</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
                 <div class="mt-12 text-center">
-                   <a href="https://www.google.com/maps/search/?api=1&query=Grand+Hilai+Taipei" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-8 py-3 bg-stone-800 text-white rounded-full hover:bg-stone-700 transition-colors uppercase tracking-widest text-xs md:text-sm font-bold">
-                    地圖導航 / Google Maps
-                   </a>
+                    <a href="https://www.google.com/maps/search/?api=1&query=Grand+Hilai+Taipei" target="_blank"
+                        rel="noopener noreferrer"
+                        class="inline-flex items-center gap-2 px-8 py-3 bg-stone-800 text-white rounded-full hover:bg-stone-700 transition-colors uppercase tracking-widest text-xs md:text-sm font-bold">
+                        地圖導航 / Google Maps
+                    </a>
                 </div>
             </div>
         </section>
 
         <!-- TABLE SEARCH & MAP -->
-        <section class="py-20 px-4 bg-wedding-cream" id="seating">
+        <section class="pt-5 pb-5 px-4 bg-wedding-cream" id="seating">
             <div class="max-w-4xl mx-auto">
                 <div class="text-center mb-10">
                     <h2 class="text-3xl md:text-4xl font-bold text-stone-800 mb-2 tracking-wide">座位查詢</h2>
@@ -159,32 +260,38 @@
                 <div class="flex flex-col md:flex-row gap-8">
                     <!-- Left Panel: Search Input -->
                     <div class="flex-1">
-                        <div class="bg-white p-6 rounded-xl shadow-sm border border-stone-100 h-full min-h-[300px]" id="search-panel">
+                        <div class="bg-white p-6 rounded-xl shadow-sm border border-stone-100 h-full min-h-[300px]"
+                            id="search-panel">
                             <!-- Search Mode -->
                             <div id="search-mode">
                                 <div class="relative mb-6">
-                                    <input type="text" id="guest-search-input" placeholder="Name (e.g., 林靜)" class="w-full pl-12 pr-4 py-4 bg-stone-50 border border-stone-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-wedding-rose/50 transition-all">
+                                    <input type="text" id="guest-search-input" placeholder="Name (e.g., 林靜)"
+                                        class="w-full pl-12 pr-4 py-4 bg-stone-50 border border-stone-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-wedding-rose/50 transition-all">
                                     <div class="absolute left-4 top-1/2 transform -translate-y-1/2 text-stone-400">
                                         <i data-lucide="search" class="w-5 h-5"></i>
                                     </div>
                                 </div>
                                 <ul id="search-results" class="space-y-2"></ul>
-                                <div id="no-results" class="hidden text-center py-8 text-stone-400 text-sm">查無此賓客 / No guest found</div>
+                                <div id="no-results" class="hidden text-center py-8 text-stone-400 text-sm">查無此賓客 / No
+                                    guest found</div>
                                 <div id="empty-state" class="text-center py-12 text-stone-300">
-                                    <div class="flex justify-center mb-2 opacity-20"><i data-lucide="search" class="w-12 h-12"></i></div>
+                                    <div class="flex justify-center mb-2 opacity-20"><i data-lucide="search"
+                                            class="w-12 h-12"></i></div>
                                     <p class="text-sm">請在上方輸入姓名 / Please enter name above</p>
                                 </div>
                             </div>
 
                             <!-- Result Mode (Hidden by default) -->
                             <div id="result-mode" class="hidden text-center py-8 animate-fade-in">
-                                <div id="result-table-circle" class="w-20 h-20 bg-wedding-rose text-white rounded-full flex items-center justify-center mx-auto mb-4 text-3xl font-bold shadow-lg">
+                                <div id="result-table-circle"
+                                    class="w-20 h-20 bg-wedding-rose text-white rounded-full flex items-center justify-center mx-auto mb-4 text-3xl font-bold shadow-lg">
                                     <!-- Table Num -->
                                 </div>
                                 <h3 class="text-2xl font-bold text-stone-800 mb-1" id="result-table-title">Table X</h3>
                                 <p class="text-stone-400 mb-2" id="result-table-subtitle">第 X 桌</p>
                                 <p class="text-lg text-stone-600 mb-8" id="result-guest-name">Welcome, Name</p>
-                                <button id="reset-search-btn" class="text-sm text-stone-400 hover:text-stone-600 underline underline-offset-4">
+                                <button id="reset-search-btn"
+                                    class="text-sm text-stone-400 hover:text-stone-600 underline underline-offset-4">
                                     查詢其他賓客 / Search Again
                                 </button>
                             </div>
@@ -193,22 +300,29 @@
 
                     <!-- Right Panel: Map -->
                     <div class="flex-1">
-                        <div class="bg-stone-100 p-4 md:p-8 pt-0 md:pt-0 pb-8 rounded-xl border border-stone-200 overflow-hidden relative flex flex-col min-h-[500px]">
+                        <div
+                            class="bg-stone-100 p-4 md:p-8 pt-0 md:pt-0 pb-8 rounded-xl border border-stone-200 overflow-hidden relative flex flex-col min-h-[500px]">
                             <!-- Stage -->
-                            <div class="w-2/3 mx-auto h-8 md:h-10 bg-wedding-dark/10 rounded-b-full mb-8 flex items-center justify-center shadow-sm">
+                            <div
+                                class="w-2/3 mx-auto h-8 md:h-10 bg-wedding-dark/10 rounded-b-full mb-8 flex items-center justify-center shadow-sm">
                                 <span class="text-stone-500 text-xs tracking-[0.3em] font-bold ml-1">舞台 / STAGE</span>
                             </div>
 
                             <!-- Main Table -->
                             <div class="flex justify-center mb-10">
-                                <div class="relative w-20 h-20 rounded-full bg-wedding-rose/10 border-2 border-wedding-rose flex items-center justify-center text-center shadow-sm">
-                                    <span class="text-sm font-bold text-wedding-rose leading-tight">主桌<br/><span class="text-[10px] opacity-80 font-normal">Main</span></span>
-                                    <div class="absolute inset-0 rounded-full border-[2px] border-dotted border-wedding-rose scale-110 pointer-events-none opacity-30"></div>
+                                <div
+                                    class="relative w-20 h-20 rounded-full bg-wedding-rose/10 border-2 border-wedding-rose flex items-center justify-center text-center shadow-sm">
+                                    <span class="text-sm font-bold text-wedding-rose leading-tight">主桌<br /><span
+                                            class="text-[10px] opacity-80 font-normal">Main</span></span>
+                                    <div
+                                        class="absolute inset-0 rounded-full border-[2px] border-dotted border-wedding-rose scale-110 pointer-events-none opacity-30">
+                                    </div>
                                 </div>
                             </div>
 
                             <!-- Map Grid -->
-                            <div class="flex-1 flex justify-between relative px-0 md:px-4 gap-4 md:gap-12 max-w-5xl mx-auto w-full" id="seating-grid">
+                            <div class="flex-1 flex justify-between relative px-0 md:px-4 gap-4 md:gap-12 max-w-5xl mx-auto w-full"
+                                id="seating-grid">
                                 <!-- Columns injected by JS -->
                                 <div class="flex-1 flex justify-center gap-4 md:gap-8">
                                     <div class="flex flex-col gap-4 md:gap-6 items-center" id="col-1"></div>
@@ -221,10 +335,16 @@
                             </div>
 
                             <!-- Legend -->
-                            <div class="mt-10 flex flex-wrap justify-center gap-6 text-xs text-stone-500 font-medium border-t border-stone-200 pt-4 mx-4">
-                                <div class="flex items-center gap-2"><span class="w-3 h-3 bg-wedding-rose/20 border border-wedding-rose rounded-full"></span> 主桌 / Main Table</div>
-                                <div class="flex items-center gap-2"><span class="w-3 h-3 bg-wedding-rose rounded-full"></span> 您的座位 / Your Seat</div>
-                                <div class="flex items-center gap-2"><span class="w-3 h-3 bg-white border border-stone-300 rounded-full"></span> 其他桌次 / Other Tables</div>
+                            <div
+                                class="mt-10 flex flex-wrap justify-center gap-6 text-xs text-stone-500 font-medium border-t border-stone-200 pt-4 mx-4">
+                                <div class="flex items-center gap-2"><span
+                                        class="w-3 h-3 bg-wedding-rose/20 border border-wedding-rose rounded-full"></span>
+                                    主桌 / Main Table</div>
+                                <div class="flex items-center gap-2"><span
+                                        class="w-3 h-3 bg-wedding-rose rounded-full"></span> 您的座位 / Your Seat</div>
+                                <div class="flex items-center gap-2"><span
+                                        class="w-3 h-3 bg-white border border-stone-300 rounded-full"></span> 其他桌次 /
+                                    Other Tables</div>
                             </div>
                         </div>
                     </div>
@@ -233,13 +353,14 @@
         </section>
 
         <!-- GALLERY -->
-        <section class="py-20 px-4 bg-white">
+        <section class="pt-5 pb-20 px-4 bg-wedding-cream">
             <div class="max-w-6xl mx-auto">
-                <div class="text-center mb-16">
+                <div class="text-center mb-10">
                     <h2 class="text-3xl md:text-4xl font-bold text-stone-800 mb-2 tracking-wide">幸福瞬間</h2>
                     <p class="text-stone-400 text-lg tracking-wider">Captured Moments</p>
                 </div>
-                <div id="gallery-grid" class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 auto-rows-[200px] grid-flow-dense">
+                <div id="gallery-grid"
+                    class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 auto-rows-[200px] grid-flow-dense">
                     <!-- Gallery Items Injected Here -->
                 </div>
             </div>
