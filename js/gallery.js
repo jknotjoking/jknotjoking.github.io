@@ -4,7 +4,10 @@ export function initGallery() {
     const container = document.getElementById('gallery-grid');
     if (!container) return;
     
-    GALLERY_PHOTOS.forEach(photo => {
+    // Shuffle the photos array
+    const shuffledPhotos = [...GALLERY_PHOTOS].sort(() => Math.random() - 0.5);
+
+    shuffledPhotos.forEach(photo => {
         const div = document.createElement('div');
         let spans = "";
         if (photo.size === 'large') spans = "col-span-2 row-span-2";
