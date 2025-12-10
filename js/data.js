@@ -36,7 +36,7 @@ export const ALL_GUESTS = TABLES.flatMap(table =>
 );
 
 export const GALLERY_PHOTOS = [
-    { id: 1, url: "https://picsum.photos/600/600?random=1", size: "large" },
+    { id: 1, url: "https://drive.google.com/uc?id=1bpGkzLTq8rJmojxBV1iXsbrs24-0QnIv", size: "large" },
     { id: 2, url: "https://picsum.photos/400/400?random=2", size: "small" },
     { id: 3, url: "https://picsum.photos/400/800?random=3", size: "medium" },
     { id: 4, url: "https://picsum.photos/400/400?random=4", size: "small" },
