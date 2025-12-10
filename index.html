@@ -151,108 +151,103 @@
             </div>
         </section>
 
-        <!-- Part 2: Ceremony Section (Hidden by default, shown via JS if URL has ?inv=ceremony) -->
-        <div id="ceremony-section"
-            class="hidden max-w-6xl mx-auto w-[calc(100%-2rem)] bg-white p-8 md:p-12 animate-fade-in border border-stone-100 relative overflow-hidden rounded-xl shadow-sm">
-            <!-- Decorative background elements -->
-            <div
-                class="absolute top-0 left-0 w-32 h-32 border-t-4 border-l-4 border-wedding-gold/20 rounded-br-3xl -translate-x-4 -translate-y-4">
-            </div>
-            <div
-                class="absolute bottom-0 right-0 w-32 h-32 border-b-4 border-r-4 border-wedding-gold/20 rounded-tl-3xl translate-x-4 translate-y-4">
-            </div>
+        <!-- Part 2: Ceremony & Wedding -->
+        <section class="pt-20 pb-10 px-4 bg-wedding-cream">
+            <div class="max-w-6xl mx-auto"> <div class="bg-white rounded-xl shadow-sm border border-stone-100 p-8 md:p-12 text-center relative overflow-hidden">
 
-            <div class="max-w-6xl mx-auto text-center relative z-10">
-                <div class="text-wedding-gold mb-6 flex justify-center"><i data-lucide="gem" class="w-10 h-10"></i>
-                </div>
-                <h3 class="text-3xl font-bold text-stone-800 mb-2 tracking-widest">證婚儀式</h3>
-                <p class="text-wedding-gold font-script text-3xl mb-10">Wedding Ceremony</p>
+                    <!-- Hidden by default, shown via JS if URL has ?inv=ceremony -->
+                    <div id="ceremony-section" class="hidden animate-fade-in">
+                        <div class="text-wedding-gold mb-6 flex justify-center">
+                            <i data-lucide="gem" class="w-10 h-10"></i>
+                        </div>
+                        <h3 class="text-3xl font-bold text-stone-800 mb-2 tracking-widest">證婚儀式</h3>
+                        <p class="text-wedding-gold font-script text-3xl mb-10">Wedding Ceremony</p>
 
-                <div class="flex flex-col justify-center items-start gap-8 text-stone-600 w-full max-w-lg mx-auto">
-                    <div class="flex items-center gap-3">
-                        <div class="text-wedding-gold p-3 bg-wedding-gold/10 rounded-full">
-                            <i data-lucide="calendar" class="w-6 h-6"></i>
-                        </div>
-                        <span class="font-medium text-lg md:text-xl text-left whitespace-nowrap">2026.02.07
-                            (Sat.)</span>
-                    </div>
-                    <div class="flex items-center gap-3">
-                        <div class="text-wedding-gold p-3 bg-wedding-gold/10 rounded-full">
-                            <i data-lucide="clock" class="w-6 h-6"></i>
-                        </div>
-                        <span class="font-medium text-base md:text-xl text-left" style="text-wrap: balance;">10:00 儀式開始
-                            / Ceremony Begins</span>
-                    </div>
-                    <div class="flex items-center gap-3">
-                        <div class="text-wedding-gold p-3 bg-wedding-gold/10 rounded-full">
-                            <i data-lucide="map-pin" class="w-6 h-6"></i>
-                        </div>
-                        <div class="text-left">
-                            <span class="font-medium text-base md:text-xl text-left" style="text-wrap: balance;">台北漢來大飯店
-                                5F 戶外禮堂<br>Grand Hilai Taipei
-                                Skyline Chapel</span>
-                            <div class="text-stone-400 text-xs md:text-sm mt-1 text-left">台北市南港區經貿一路168號<br>No. 168,
-                                Jingmao 1st
-                                Rd, Nangang Dist, Taipei</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Part 3: Details -->
-        <section class="pt-10 pb-10 px-4 bg-wedding-cream">
-            <div class="max-w-6xl mx-auto">
-                <div class="max-w-6xl mx-auto bg-white rounded-xl shadow-sm border border-stone-100 p-8 md:p-12 text-center">
-                    <div class="text-wedding-rose mb-6 flex justify-center"><i data-lucide="heart"
-                            class="w-10 h-10"></i></div>
-                    <h3 class="text-3xl font-bold text-stone-800 mb-2 tracking-widest">午宴資訊</h3>
-                    <p class="text-wedding-rose font-script text-3xl mb-10">Reception Info</p>
-
-                    <div class="flex flex-col justify-center items-start gap-8 text-stone-600 w-full max-w-lg mx-auto">
-                        <!-- Date -->
-                        <div class="flex items-center gap-3">
-                            <div class="text-wedding-rose p-3 bg-rose-50 rounded-full">
-                                <i data-lucide="calendar" class="w-6 h-6"></i>
+                        <div class="flex flex-col justify-center items-start gap-6 text-stone-600 w-full max-w-lg mx-auto mb-10">
+                            <div class="flex items-center gap-3">
+                                <div class="text-wedding-gold p-3 bg-wedding-gold/10 rounded-full">
+                                    <i data-lucide="calendar" class="w-6 h-6"></i>
+                                </div>
+                                <span class="font-medium text-lg md:text-xl text-left whitespace-nowrap">2026.02.07 (Sat.)</span>
                             </div>
-                            <span class="font-medium text-lg md:text-xl text-left whitespace-nowrap">2026.02.07
-                                (Sat.)</span>
-                        </div>
-
-                        <!-- Time -->
-                        <div class="flex items-center gap-3">
-                            <div class="text-wedding-rose p-3 bg-rose-50 rounded-full">
-                                <i data-lucide="clock" class="w-6 h-6"></i>
+                            <div class="flex items-center gap-3">
+                                <div class="text-wedding-gold p-3 bg-wedding-gold/10 rounded-full">
+                                    <i data-lucide="clock" class="w-6 h-6"></i>
+                                </div>
+                                <span class="font-medium text-base md:text-xl text-left" style="text-wrap: balance;">
+                                    10:00 儀式開始 / Ceremony Begins
+                                </span>
                             </div>
-                            <span class="font-medium text-base md:text-xl text-left" style="text-wrap: balance;">11:30
-                                迎賓酒會 / Doors Open<br>12:00 午宴開始 / Reception</span>
-                        </div>
-
-                        <!-- Location -->
-                        <div class="flex items-center gap-3">
-                            <div class="text-wedding-rose p-3 bg-rose-50 rounded-full">
-                                <i data-lucide="map-pin" class="w-6 h-6"></i>
-                            </div>
-                            <div class="text-left">
-                                <span class="font-medium text-base md:text-xl text-left"
-                                    style="text-wrap: balance;">台北漢來大飯店 3F 鉑金Ａ廳<br>Grand Hilai Taipei 3F
-                                    Platinum
-                                    Ballroom A</span>
-                                <div class="text-stone-400 text-xs md:text-sm mt-1 text-left">台北市南港區經貿一路168號<br>No. 168,
-                                    Jingmao
-                                    1st Rd,
-                                    Nangang Dist, Taipei</div>
+                            <div class="flex items-center gap-3">
+                                <div class="text-wedding-gold p-3 bg-wedding-gold/10 rounded-full">
+                                    <i data-lucide="map-pin" class="w-6 h-6"></i>
+                                </div>
+                                <div class="text-left">
+                                    <span class="font-medium text-base md:text-xl text-left" style="text-wrap: balance;">
+                                        台北漢來大飯店 5F 戶外禮堂<br>Grand Hilai Taipei Skyline Chapel
+                                    </span>
+                                    <div class="text-stone-400 text-xs md:text-sm mt-1 text-left">
+                                        台北市南港區經貿一路168號<br>
+                                        No. 168, Jingmao 1st Rd, Nangang Dist, Taipei
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div class="mt-5 text-center w-full">
-                            <a href="https://maps.app.goo.gl/PmKucChvua6Gf6M46" target="_blank"
-                                rel="noopener noreferrer"
-                                class="inline-flex items-center gap-2 px-10 py-4 bg-stone-800 text-white rounded-full hover:bg-stone-700 transition-all transform hover:-translate-y-1 shadow-lg hover:shadow-xl uppercase tracking-widest text-sm font-bold">
-                                <i data-lucide="map" class="w-5 h-5"></i>
-                                地圖導航 / Google Maps
-                            </a>
+
+                        <hr class="border-stone-200 my-12 max-w-xs mx-auto">
+                    </div>
+
+                    <div>
+                        <div class="text-wedding-rose mb-6 flex justify-center">
+                            <i data-lucide="heart" class="w-10 h-10"></i>
+                        </div>
+                        <h3 class="text-3xl font-bold text-stone-800 mb-2 tracking-widest">午宴資訊</h3>
+                        <p class="text-wedding-rose font-script text-3xl mb-10">Reception Info</p>
+
+                        <div class="flex flex-col justify-center items-start gap-6 text-stone-600 w-full max-w-lg mx-auto">
+                            <div class="flex items-center gap-3">
+                                <div class="text-wedding-rose p-3 bg-rose-50 rounded-full">
+                                    <i data-lucide="calendar" class="w-6 h-6"></i>
+                                </div>
+                                <span class="font-medium text-lg md:text-xl text-left whitespace-nowrap">2026.02.07 (Sat.)</span>
+                            </div>
+
+                            <div class="flex items-center gap-3">
+                                <div class="text-wedding-rose p-3 bg-rose-50 rounded-full">
+                                    <i data-lucide="clock" class="w-6 h-6"></i>
+                                </div>
+                                <span class="font-medium text-base md:text-xl text-left" style="text-wrap: balance;">
+                                    11:30 迎賓酒會 / Doors Open<br>12:00 午宴開始 / Reception
+                                </span>
+                            </div>
+
+                            <div class="flex items-center gap-3">
+                                <div class="text-wedding-rose p-3 bg-rose-50 rounded-full">
+                                    <i data-lucide="map-pin" class="w-6 h-6"></i>
+                                </div>
+                                <div class="text-left">
+                                    <span class="font-medium text-base md:text-xl text-left" style="text-wrap: balance;">
+                                        台北漢來大飯店 3F 鉑金Ｂ廳<br>Grand Hilai Taipei 3F Platinum Ballroom B
+                                    </span>
+                                    <div class="text-stone-400 text-xs md:text-sm mt-1 text-left">
+                                        台北市南港區經貿一路168號<br>
+                                        No. 168, Jingmao 1st Rd, Nangang Dist, Taipei
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="mt-5 text-center w-full"> 
+                                <a href="https://www.google.com/maps/search/?api=1&query=Grand+Hilai+Taipei" target="_blank"
+                                    rel="noopener noreferrer"
+                                    class="inline-flex items-center gap-2 px-10 py-4 bg-stone-800 text-white rounded-full hover:bg-stone-700 transition-all transform hover:-translate-y-1 shadow-lg hover:shadow-xl uppercase tracking-widest text-sm font-bold">
+                                    <i data-lucide="map" class="w-5 h-5"></i>
+                                    地圖導航 / Google Maps
+                                </a>
+                            </div>
+
                         </div>
                     </div>
+
                 </div>
             </div>
         </section>
@@ -431,8 +426,8 @@
             <i data-lucide="heart" class="w-5 h-5 fill-current"></i>
         </div>
         <p class="font-script text-3xl text-wedding-light-blue mb-2">Jack & Kensey</p>
-        <p class="text-[15px] tracking-wider uppercase opacity-80">Thank you for celebrating with us</p>
-        <p class="text-[14px] mt-12 text-stone-100">
+        <p class="text-[15px] md:text-[14px] tracking-[0.2em] uppercase text-stone-400">Thank you for celebrating with us</p>
+        <p class="text-[14px] md:text-[13px] tracking-[0.2em] uppercase text-stone-400 mt-12">
           Designed by 
           <a href="https://www.instagram.com/lance__huang/" target="_blank" class="hover:text-white transition-colors">Lance</a>
         </p>
