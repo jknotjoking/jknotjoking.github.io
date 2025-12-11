@@ -5,8 +5,6 @@ export function initMap() {
     renderColumn('col-2', [6, 7, 8, 9, 10]);
     renderColumn('col-3', [11, 12, 13, 14, 15]);
     renderColumn('col-4', [16, 17, 18, 19, 20]);
-    renderColumn('col-5', [21, 22, 23, 24, 25]);
-    renderColumn('col-6', [26, 27, 28, 29, 30]);
 
     // Return the update function so it can be used by the search module
     return updateMapHighlight;
