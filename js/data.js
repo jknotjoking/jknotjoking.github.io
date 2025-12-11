@@ -37,7 +37,7 @@ export const TABLES = rawGuestList.trim().split('\n').map(line => {
     const [numStr, namesStr] = line.split('\t');
     return {
         tableNumber: parseInt(numStr, 10),
-        guests: namesStr.split('、').map(n => n.trim())
+        guests: namesStr ? namesStr.split('、').map(n => n.trim()) : []
     };
 });
 
