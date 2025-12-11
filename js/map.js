@@ -14,7 +14,6 @@ export function initMap() {
 
 function renderColumn(elementId, tables) {
     const container = document.getElementById(elementId);
-    console.log(`正在渲染: ${elementId}`, container ? "✅ 找到容器" : "❌ 找不到容器");
     if (!container) return;
     
     container.innerHTML = '';
