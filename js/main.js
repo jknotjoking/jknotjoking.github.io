@@ -1,4 +1,4 @@
-import { initMap } from './map.js';
+import { initMap } from './map.js?v=1';
 import { initSearch } from './search.js';
 import { initGallery } from './gallery.js';
 
@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const updateMapCallback = initMap();
     initSearch(updateMapCallback);
     initGallery();
-    
+
     // Check URL params for ceremony
     checkCeremonyAccess();
 });
