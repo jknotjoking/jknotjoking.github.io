@@ -21,7 +21,7 @@ function renderColumn(elementId, tables) {
         if (num === null) {
             // Placeholder for empty slot
             const placeholder = document.createElement('div');
-            placeholder.className = "w-14 h-14 md:w-14 md:h-14"; // Same dimensions as table
+            placeholder.className = "w-10 h-10 md:w-14 md:h-14"; // Same dimensions as table
             container.appendChild(placeholder);
         } else {
             const el = createTableElement(num);
@@ -33,7 +33,7 @@ function renderColumn(elementId, tables) {
 function createTableElement(tableNum) {
     const div = document.createElement('div');
     div.id = `table-${tableNum}`;
-    div.className = `relative w-14 h-14 md:w-14 md:h-14 rounded-full flex items-center justify-center text-sm font-bold border-2 transition-all duration-500 bg-white text-stone-600 border-stone-300`;
+    div.className = `relative w-10 h-10 md:w-14 md:h-14 rounded-full flex items-center justify-center text-sm font-bold border-2 transition-all duration-500 bg-white text-stone-600 border-stone-300`;
     div.innerHTML = `
         ${tableNum}
         <div class="absolute inset-0 rounded-full border-[1px] border-dotted border-stone-300 scale-125 pointer-events-none opacity-50"></div>
@@ -48,10 +48,10 @@ function updateMapHighlight(tableNum) {
         if (prev) {
             if (currentHighlightedTable === 0) {
                 // Reset Main Table
-                prev.className = `relative w-24 h-24 rounded-full bg-wedding-rose/10 border-2 border-wedding-rose flex items-center justify-center text-center shadow-sm transition-all duration-500 text-wedding-rose`;
+                prev.className = `relative w-16 h-16 md:w-24 md:h-24 rounded-full bg-wedding-rose/10 border-2 border-wedding-rose flex items-center justify-center text-center shadow-sm transition-all duration-500 text-wedding-rose`;
             } else {
                 // Reset Normal Table
-                prev.className = `relative w-14 h-14 md:w-14 md:h-14 rounded-full flex items-center justify-center text-sm font-bold border-2 transition-all duration-500 bg-white text-stone-600 border-stone-300`;
+                prev.className = `relative w-10 h-10 md:w-14 md:h-14 rounded-full flex items-center justify-center text-sm font-bold border-2 transition-all duration-500 bg-white text-stone-600 border-stone-300`;
             }
         }
     }
@@ -64,10 +64,10 @@ function updateMapHighlight(tableNum) {
         if (curr) {
             if (tableNum === 0) {
                 // Highlight Main Table
-                curr.className = `relative w-24 h-24 rounded-full bg-wedding-rose text-white border-wedding-rose flex items-center justify-center text-center shadow-[0_0_20px_rgba(230,184,184,0.9)] scale-110 z-20 transition-all duration-500`;
+                curr.className = `relative w-16 h-16 md:w-24 md:h-24 rounded-full bg-wedding-rose text-white border-wedding-rose flex items-center justify-center text-center shadow-[0_0_20px_rgba(230,184,184,0.9)] scale-110 z-20 transition-all duration-500`;
             } else {
                 // Highlight Normal Table
-                curr.className = `relative w-14 h-14 md:w-14 md:h-14 rounded-full flex items-center justify-center text-sm font-bold border-2 transition-all duration-500 bg-wedding-rose text-white border-wedding-rose scale-125 shadow-[0_0_15px_rgba(230,184,184,0.8)] z-10`;
+                curr.className = `relative w-10 h-10 md:w-14 md:h-14 rounded-full flex items-center justify-center text-sm font-bold border-2 transition-all duration-500 bg-wedding-rose text-white border-wedding-rose scale-125 shadow-[0_0_15px_rgba(230,184,184,0.8)] z-10`;
             }
         } else {
             // If table element doesn't exist (e.g. Table 27+), just do nothing visually on the map.
