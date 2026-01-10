@@ -69,6 +69,10 @@ function updateMapHighlight(tableNum) {
                 // Highlight Normal Table
                 curr.className = `relative w-14 h-14 md:w-14 md:h-14 rounded-full flex items-center justify-center text-sm font-bold border-2 transition-all duration-500 bg-wedding-rose text-white border-wedding-rose scale-125 shadow-[0_0_15px_rgba(230,184,184,0.8)] z-10`;
             }
+        } else {
+            // If table element doesn't exist (e.g. Table 27+), just do nothing visually on the map.
+            // The search result panel will still show the table number.
+            console.log(`Table ${tableNum} not found on map.`);
         }
     }
 }
