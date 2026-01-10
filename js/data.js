@@ -1,5 +1,6 @@
 // RAW DATA
 const rawGuestList = `
+0	蔡寬福、張瑢糴、李武男、徐瑜樺、主桌貴賓
 1	Alexander Hamilton、林志豪、張偉、Emily Watson、陳怡君、王力、Michael Chang、黃俊傑、李娜、Sarah Thompson
 2	張雅婷、James Lee、David Lee、林欣怡、趙強、Jennifer Wu、王志強、孫麗、Robert Garcia、李淑芬
 3	吳軍、Jessica Chen、陳建宏、鄭平、William Clark、蔡佩珊、謝安、Olivia Brown、楊宗緯、馮敏
@@ -31,7 +32,7 @@ export const TABLES = rawGuestList.trim().split('\n').map(line => {
     };
 });
 
-export const ALL_GUESTS = TABLES.flatMap(table => 
+export const ALL_GUESTS = TABLES.flatMap(table =>
     table.guests.map(name => ({ name, tableNumber: table.tableNumber }))
 );
 
