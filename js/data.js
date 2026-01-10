@@ -27,7 +27,6 @@ const rawGuestList = `
 24  Cherry Yang、Gerry Lin、Annie Lin、Bryan Lin、Yan Lin、Cindy、Miho Lin、Kimi Lin
 25  叔公 張朝國、姨婆 張楊寶蓮、哥哥 張瑞堂、舅公 楊得元、伯父 何志傑、漂亮姨婆 王春梅、教授 何四郎、大伯父 李文章、伯父 李文欽、叔叔 洪聞、洪聞夫人 王秋萍
 26  連文彬、許文泉、謝宜良、王政琦、曹心寗、曹柇軒、Woody、Sammi、曹人宇、洪雪裕
-27  IPP David、Jane、Tanya、Michelle、Lily、Yvette、Jeanette、Grace、林家妃、Sophie 翁淑惠
 `;
 
 // Parse Guest Data
