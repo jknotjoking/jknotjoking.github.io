@@ -31,12 +31,16 @@ const rawGuestList = `
 
 // Parse Guest Data
 export const TABLES = rawGuestList.trim().split('\n').map(line => {
-    const [numStr, namesStr] = line.split('\t');
+    // Match number at start, followed by whitespace (tab or spaces), then the rest
+    const match = line.match(/^(\d+)[\t\s]+(.+)$/);
+    if (!match) return null;
+
+    const [_, numStr, namesStr] = match;
     return {
         tableNumber: parseInt(numStr, 10),
         guests: namesStr.split('、').map(n => n.trim())
     };
-});
+}).filter(t => t !== null);
 
 export const ALL_GUESTS = TABLES.flatMap(table =>
     table.guests.map(name => ({ name, tableNumber: table.tableNumber }))
