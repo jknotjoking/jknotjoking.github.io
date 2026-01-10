@@ -5,7 +5,7 @@ export function initSearch(onTableSelect) {
     const resultsContainer = document.getElementById('search-results');
     const noResults = document.getElementById('no-results');
     const emptyState = document.getElementById('empty-state');
-    
+
     const searchMode = document.getElementById('search-mode');
     const resultMode = document.getElementById('result-mode');
     const resetBtn = document.getElementById('reset-search-btn');
@@ -13,7 +13,7 @@ export function initSearch(onTableSelect) {
     if (!input) return;
 
     input.addEventListener('input', (e) => {
-        const term = e.target.value.trim().toLowerCase(); 
+        const term = e.target.value.trim().toLowerCase();
         resultsContainer.innerHTML = '';
 
         if (!term) {
@@ -55,13 +55,20 @@ export function initSearch(onTableSelect) {
         resultMode.classList.remove('hidden');
 
         // Update Text
-        document.getElementById('result-table-circle').textContent = guest.tableNumber;
-        document.getElementById('result-table-title').textContent = `第 ${guest.tableNumber} 桌`;
-        document.getElementById('result-table-subtitle').textContent = `Table ${guest.tableNumber}`;
+        // Update Text
+        if (guest.tableNumber === 0) {
+            document.getElementById('result-table-circle').textContent = "主";
+            document.getElementById('result-table-title').textContent = "主桌";
+            document.getElementById('result-table-subtitle').textContent = "Main Table";
+        } else {
+            document.getElementById('result-table-circle').textContent = guest.tableNumber;
+            document.getElementById('result-table-title').textContent = `第 ${guest.tableNumber} 桌`;
+            document.getElementById('result-table-subtitle').textContent = `Table ${guest.tableNumber}`;
+        }
         document.getElementById('result-guest-name').textContent = `Welcome, ${guest.name}`;
 
         // Update Map via callback
-        if(onTableSelect) onTableSelect(guest.tableNumber);
+        if (onTableSelect) onTableSelect(guest.tableNumber);
     }
 
     if (resetBtn) {
@@ -71,7 +78,7 @@ export function initSearch(onTableSelect) {
             input.value = '';
             resultsContainer.innerHTML = '';
             emptyState.classList.remove('hidden');
-            if(onTableSelect) onTableSelect(null);
+            if (onTableSelect) onTableSelect(null);
         });
     }
 }
