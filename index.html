@@ -327,11 +327,11 @@
                 <div class="flex flex-col md:flex-row gap-8">
                     <!-- Left Panel: Search Input -->
                     <div class="flex-1">
-                        <div class="bg-white p-6 rounded-xl shadow-sm border border-stone-100 h-full min-h-[300px]"
+                        <div class="bg-white p-4 md:p-6 rounded-xl shadow-sm border border-stone-100 h-full min-h-0 md:min-h-[300px]"
                             id="search-panel">
                             <!-- Search Mode -->
                             <div id="search-mode">
-                                <div class="relative mb-6">
+                                <div class="relative mb-3 md:mb-6">
                                     <input type="text" id="guest-search-input" placeholder="Name (e.g., 林靜)"
                                         class="w-full pl-12 pr-4 py-4 bg-stone-50 border border-stone-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-wedding-rose/50 transition-all">
                                     <div class="absolute left-4 top-1/2 transform -translate-y-1/2 text-stone-400">
@@ -339,11 +339,12 @@
                                     </div>
                                 </div>
                                 <ul id="search-results" class="space-y-2"></ul>
-                                <div id="no-results" class="hidden text-center py-8 text-stone-400 text-sm">查無此賓客，請試試看中/英文名字<br>No
+                                <div id="no-results" class="hidden text-center py-8 text-stone-400 text-sm">
+                                    查無此賓客，請試試看中/英文名字<br>No
                                     guest found. Please try aonther name.</div>
-                                <div id="empty-state" class="text-center py-12 text-stone-300">
+                                <div id="empty-state" class="text-center py-6 md:py-12 text-stone-300">
                                     <div class="flex justify-center mb-2 opacity-50"><i data-lucide="search"
-                                            class="w-12 h-12"></i></div>
+                                            class="w-8 h-8 md:w-12 md:h-12"></i></div>
                                     <p class="text-sm">請在上方輸入您的姓名<br>Please enter your name above</p>
                                 </div>
                             </div>
