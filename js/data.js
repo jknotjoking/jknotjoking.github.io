@@ -17,7 +17,7 @@ const rawGuestList = `
 14	五星好評 瑞雲姐、姨丈 張人文、雅雅阿姨、莊壹証、舅公 侯德宗、Ray、洪美雅、林于倫、小舅 侯逯陞 Cary、小舅媽 Nicole、舅婆、Ivy
 15	叔公 張朝國、姨婆 張楊寶蓮、哥哥 張瑞堂、舅公 楊得元、伯父 何志傑、漂亮姨婆 王春梅、叔公 李武龍、大伯父 李文章、叔叔 洪聞、洪聞夫人 王秋萍
 16	Fanny Chang、Kevin Liu、Jessie Chang、Brian Yeh、Joanna、James Lee、Emily Chiu、Eason Hsu、Hsin Pei Chou、軒哥阿嬤、吳小珈
-17	Maggie Tang、Peter Chiang、Catherine Hsiao、Oscar Tang、Sisa Chiang、Ivan Ivanov、Alexandar Ivanov、Ghini Iong、Lorrain Sun、Avery Chiang
+17	Maggie Tang、Capybara Otani、Catherine Hsiao、Oscar Tang、Sisa Chiang、Ivan Ivanov、Alexandar Ivanov、Ghini Iong、Lorrain Sun、Avery Chiang
 18	Steve Tang、Anderson Goh、Tiffany Lee、Yaya Lau、Justin Hui、Amber Chiu、Angeline Kuo、Chunkiat Ong、Wenxin Chiam、Jill Lin、Amy Williams
 19	John、Eric、950、Mag、Hans、Weber、Joseph、Jay、Vivian、李家碩
 20	林佳欣、黃其安、江明勳 莫凝123、洪邵澤 ccs、喜德、Rax、樹哥、小米、Bala、志祥
@@ -25,7 +25,7 @@ const rawGuestList = `
 22  李佳妙、吳英立、李怡儒、蔡蕙霞、二姑婆 徐綉玲、二姑丈 李專榮、徐千純、謝元峰、謝承儒、謝承哲
 23  Cherry Yang、Gerry Lin、Annie Lin、Bryan Lin、語柔、Yan Lin、Cindy、Miho Lin、Kimi Lin、冠廷、永婕
 24  Candice Chia、Kevin Chen、Lucas Hung、Louise Ho、Hali Liu、Lance Huang、Irene、丸少爺、Emma Fang、黃子耘、吳佳旻
-25  Michael、Belle、Webber、Vera、Megan、Nikki、David、Allison、Steven、Chloe
+25  Michael、Belle、Webber、Vera、Megan、Nikki、David、Allison、Steven、Zoe
 26  
 `;
 
