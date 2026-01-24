@@ -7,7 +7,7 @@ const rawGuestList = `
 4	PP Amanada、PP Linda、PP Shain、PP Keane、PP Bear、PP Franey、PP Godspeed、PP Eric 王金祥、PP Frank、Leona
 5	連文彬、許文泉、謝宜良、王政琦、林怡伶 Ivy、郭思寬、曹心寗、曹柇軒、Woody、Sammi、曹人宇、洪雪裕
 6	鄭立仁 Jack、廖慧伶、謝涴亦 Gina、高紹瑀 Amber、高菁蔚 Vivian、曾靜怡Yudy、徐家清 Sissi、廖玉美、蔣可怡 Teri、安東尼、吳婕柔 Winnie
-7	蔡孟攸、St Cloud、張馥琪、張維恩、張瑜庭、Ivy Dodo、易慎慈、張塋鈺、林霆宥、林穎菲、張雅憶
+7	蔡孟攸、St Cloud、張馥淇、張維恩、張瑜庭、Ivy Dodo、易慎慈、張雅憶、林霆宥、張塋鈺、林穎菲
 8	陳解文、劉豐逸、蔡妤萱、蔡敏森、汪嘉慧、陳怡媚、陳冠佑、鄭言晞、鄭芯宥、蔡昀頤、蔡溱羽、蔡溱秝
 9	李嘉芬、陳永正、大野友義、Ono Yoshie、蔡筠、李孟鈴Linda、王家玉、黃大倫、鐘志、連素哲
 10	馬靜如 PDG Sara、Ralph、莊金英 PP Linda、陳耀祖 James、秦嗣林 PP Stone、徐靜孄、彭達賢 PP Gear、許靜慧、吳榮發 PP Donny、林芷亦 PP Jill
