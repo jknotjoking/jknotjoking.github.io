@@ -27,6 +27,12 @@ export function initSearch(onTableSelect) {
 
         if (matches.length === 0) {
             noResults.classList.remove('hidden');
+            // GA4 Tracking: 記錄查無此人的搜尋（可以幫你發現名單是否有漏）
+            if (term.length >= 2) {
+                gtag('event', 'search_no_results', {
+                    'search_term': term
+                });
+            }
         } else {
             noResults.classList.add('hidden');
             matches.forEach(guest => {
@@ -50,6 +56,11 @@ export function initSearch(onTableSelect) {
     });
 
     function selectGuest(guest) {
+        gtag('event', 'view_seating_result', {
+            'guest_name': guest.name,
+            'table_number': guest.tableNumber === 0 ? 'Main Table' : guest.tableNumber
+        });
+        
         // Switch UI to Result Mode
         searchMode.classList.add('hidden');
         resultMode.classList.remove('hidden');
