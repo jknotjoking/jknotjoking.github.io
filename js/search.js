@@ -25,16 +25,22 @@ export function initSearch(onTableSelect) {
         emptyState.classList.add('hidden');
         const matches = ALL_GUESTS.filter(g => g.name.toLowerCase().includes(term)).slice(0, 6);
 
+        let searchTimeout;
         if (matches.length === 0) {
             noResults.classList.remove('hidden');
+            clearTimeout(searchTimeout);
             // GA4 Tracking: 記錄查無此人的搜尋（可以幫你發現名單是否有漏）
-            if (term.length >= 2) {
-                gtag('event', 'search_no_results', {
-                    'search_term': term
-                });
-            }
+            searchTimeout = setTimeout(() => {
+                if (term.length >= 2) { // 字數建議 2 字以上（針對中文名）
+                    gtag('event', 'search_no_results', {
+                        'search_term': term,
+                        'method': 'auto_search'
+                    });
+                }
+            }, 1000);
         } else {
             noResults.classList.add('hidden');
+            clearTimeout(searchTimeout);
             matches.forEach(guest => {
                 const li = document.createElement('li');
                 li.className = "flex items-center justify-between p-3 hover:bg-stone-50 rounded-lg cursor-pointer transition-colors group border-b border-stone-100 last:border-0";
