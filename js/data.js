@@ -24,7 +24,7 @@ const rawGuestList = `
 21  Uncle 李昱頡、劉福財、劉福財夫人、教授 何四郎、伯父 林文欽、張仁德、張仁德夫人、李守益、曾昭雄
 22  李佳妙、吳英立、李怡儒、蔡蕙霞、二姑婆 徐綉玲、二姑丈 李專榮、徐千純、謝元峰、謝承儒、謝承哲
 23  Cherry Yang、Gerry Lin、Annie Lin、Bryan Lin、語柔、Yan Lin、Cindy、Miho Lin、Kimi Lin、冠廷、永婕
-24  Candice Chia 賈永廷、Kevin Chen 陳育楷、Hali Liu 劉紫筠、Lance Huang 黃睿展、Emma Fang、林家泯、林家泯+1、林家泯+2、林家泯+3、林家泯+4、林家泯+5
+24  Candice Chia 賈永廷、Kevin Chen 陳育楷、Hali Liu 劉紫筠、Lance Huang 黃睿展、Emma Fang、林家洺、林家洺+1、林家洺+2、林家洺+3、林家洺+4、林家洺+5
 25  Michael、Belle、Webber、Vera、Megan、Nikki、David、Zoe、Irene、丸少爺、黃子耘、吳佳旻
 26  
 `;
