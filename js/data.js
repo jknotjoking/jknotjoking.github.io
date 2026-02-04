@@ -6,7 +6,7 @@ const rawGuestList = `
 3	P IQ 胡儷馨、PE Alan 林伯倫、James Huang 黃丁士、周祝如、陳淑靜、Ken Yuan、林怡伶 Ivy、郭思寬、江俊豪、黃錦雯
 4	IPP David、Jane、Tanya、Michelle、Lily、Yvette、Jeanette、Grace、陳怡靜、楊麗桂
 5	連文彬、許文泉、謝宜良、劉懿萱、曹心寗、曹柇軒、Woody、Sammi、曹人宇、洪雪裕、Sophie 翁淑惠
-6	謝涴亦 Gina、高紹瑀 Amber、高菁蔚 Vivian、曾靜怡Yudy、徐家清 Sissi、廖玉美、蔣可怡 Teri、安東尼、吳婕柔 Winnie、謝義宏、Eric Hu
+6	謝涴亦 Gina、高紹瑀 Amber、高菁蔚 Vivian、楊佳玲、徐家清 Sissi、廖玉美、蔣可怡 Teri、安東尼、吳婕柔 Winnie、謝義宏、Eric Hu
 7	蔡孟攸、St Cloud、張馥淇、張瑜庭、Ivy Dodo、易慎慈、張雅憶、林霆宥、張塋鈺、林穎菲、林漢威
 8	陳解文、劉豐逸、蔡妤萱、蔡閔森、汪嘉慧、陳怡媚、陳冠佑、蔡昀頤、蔡溱羽、蔡溱秝、陳楷元
 9	李嘉芬、林家妃、大野友義、Ono Yoshie、蔡筠、李孟玲 Linda、王家玉、黃大倫、鍾明孝、連素哲
